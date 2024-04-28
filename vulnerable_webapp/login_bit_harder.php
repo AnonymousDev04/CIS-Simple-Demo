@@ -19,7 +19,6 @@ if(isset($_POST['submit'])) {
 		echo "<a href='login_easy.php'>Go back</a>";
 	} else {
 		if (preg_match("/superadmin/", $user)) {
-			echo "im here!";
 			$query = "SELECT * FROM login WHERE username=? AND password = ?";
 			$stmt = mysqli_prepare($mysqli, $query);
 			mysqli_stmt_bind_param($stmt, "ss", $user, $pass);
@@ -27,7 +26,6 @@ if(isset($_POST['submit'])) {
 			$result = mysqli_stmt_get_result($stmt);
 			$row = mysqli_fetch_assoc($result);
 		} else {
-			echo "im here lol!";
 			$sql_query = "SELECT * FROM login WHERE username='$user' AND password = '$pass'";
 			echo $sql_query.'<br>';
 			$result = mysqli_query($mysqli, $sql_query)

@@ -12,9 +12,8 @@ This project contains a vulnerable web application (`vulnerable_webapp`) that si
 2. **Cross Site Scripting (XSS):** Understand the dangers of XSS attacks and how to defend against them.
 3. **Logical Error Bypass:** Python script (`store_1_logical.py`) for bypassing logical errors in code.
 4. **Language-Specific Error Exploitation:** C++ code (`store_2_overflow.cpp`) demonstrating language-specific vulnerabilities.
-5. **Command Injection:** Python script (`store_3_execute.py`) showcasing command injection via vulnerable function implementation.
+5. **Command Injection via insecure function implementation:** Python script (`store_3_execute.py`) showcasing command injection via vulnerable function implementation.
 
 ## Disclaimer ⚠️
 
 This project is for educational purposes only. Do not use it for illegal activities. The vulnerabilities demonstrated here are intentionally created for learning and practicing security concepts.
-
