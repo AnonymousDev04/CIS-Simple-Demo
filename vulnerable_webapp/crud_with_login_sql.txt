@@ -1,0 +1,22 @@
+CREATE database crud_with_login;
+
+USE crud_with_login; 
+
+CREATE TABLE `login` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `password_txt` varchar(255) DEFAULT NULL,
+   PRIMARY KEY (`id`),
+   UNIQUE KEY `unique_username` (`username`)
+)
+
+CREATE TABLE `forum_message` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) DEFAULT NULL,
+  `message` text,
+  `time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+)
